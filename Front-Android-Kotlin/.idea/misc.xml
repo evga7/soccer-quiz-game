@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/QuizFrontApp/app/src/main/res/drawable-v24/border2.xml" value="0.14583333333333334" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/drawable-v24/button_shape2.xml" value="0.1734375" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/drawable/alert_popup.xml" value="0.14583333333333334" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/drawable/back.xml" value="0.26979166666666665" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/drawable/border.xml" value="0.14583333333333334" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/drawable/button_shape.xml" value="0.26979166666666665" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/drawable/buttonshape.xml" value="0.26979166666666665" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26614583333333336" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/drawable/image_orverlay.xml" value="0.26979166666666665" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/drawable/image_shape.xml" value="0.26979166666666665" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/font/font.xml" value="0.1609375" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/activity_game_score_screen.xml" value="0.20199275362318841" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/activity_game_screen.xml" value="0.152" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/activity_main.xml" value="0.2210144927536232" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/activity_main_screen.xml" value="0.264" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/activity_more_screen.xml" value="0.24909420289855072" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/activity_rank_screen.xml" value="0.25" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/activity_result_screen.xml" value="0.13072916666666667" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/alert_popup.xml" value="0.264" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/alert_popup2.xml" value="0.4" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/alert_popup3.xml" value="0.2341485507246377" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/alert_quiz_info.xml" value="0.2" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/alert_select_game_mode.xml" value="0.4834123222748815" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/game_score_screen.xml" value="0.20199275362318841" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/item_quizinfo.xml" value="0.264" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/item_rankinfo.xml" value="0.136" />
+        <entry key="..\:/QuizFrontApp/app/src/main/res/layout/quiz_info_popup.xml" value="0.25364583333333335" />
+        <entry key="app/src/main/res/layout/activity_board_screen.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/activity_game_screen.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/activity_main_screen.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/activity_more_screen.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/activity_rank_screen.xml" value="0.32472826086956524" />
+        <entry key="app/src/main/res/layout/activity_result_screen.xml" value="0.3541666666666667" />
+        <entry key="app/src/main/res/layout/item_quizinfo.xml" value="0.3446557971014493" />
+        <entry key="app/src/main/res/layout/item_rankinfo.xml" value="0.19791666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Android API 32 Platform" project-jdk-type="Android SDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

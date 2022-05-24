@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- alert_popup.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <TextView
+        android:text="개발자에게 의견 보내기"
+        android:fontFamily="@font/bmfont"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3292DD"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:id="@+id/popupTextView"
+        />
+
+    <EditText
+        android:id="@+id/mPopupMessageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:ems="10"
+        android:textColorHint="#BDBDBD"
+        android:textColor="@color/black"
+        android:hint="할말을 적어주세요"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/mPopupMessageCancelButton"
+            android:background="@color/white"
+            android:layout_weight="0.5"
+            android:text="취소"
+            android:fontFamily="@font/bmfont"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <Button
+            android:id="@+id/mPopupMessagePostButton"
+            android:background="@color/white"
+            android:text="보내기"
+            android:fontFamily="@font/bmfont"
+            android:layout_weight="0.5"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+</LinearLayout>

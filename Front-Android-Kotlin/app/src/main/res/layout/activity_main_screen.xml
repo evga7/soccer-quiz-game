@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nickNameTextView"
+        android:fontFamily="@font/bmfont"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:background="#4D9FE1"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.4"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nickNameTextView"
+        app:layout_constraintVertical_bias="0.1"></ImageView>
+
+    <RelativeLayout
+        android:id="@+id/gameStartLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.07"
+        android:background="@drawable/button_shape"
+        android:orientation="horizontal"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        <ImageView
+            android:id="@+id/mStartButtonImage"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:elevation="1dp"
+            android:translationZ="1dp"
+            app:srcCompat="@drawable/play_image" />
+
+        <Button
+            android:id="@+id/gameStartButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ffffff"
+            android:fontFamily="@font/bmfont"
+            android:text="퀴즈 시작"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mRankButtonLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.07"
+        android:orientation="horizontal"
+        android:background="@drawable/button_shape"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameStartLayout">
+
+        <ImageView
+            android:id="@+id/mRankButtonImage"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:elevation="1dp"
+            android:translationZ="1dp"
+            app:srcCompat="@drawable/rank_image" />
+
+        <Button
+            android:id="@+id/viewRankButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ffffff"
+            android:fontFamily="@font/bmfont"
+            android:text="랭킹 보기"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"></Button>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.07"
+        android:background="@drawable/button_shape"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mRankButtonLayout"
+        app:layout_constraintVertical_bias="0.1">
+
+        <ImageView
+            android:id="@+id/mMoreButtonImage"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:elevation="1dp"
+            android:translationZ="1dp"
+            app:srcCompat="@drawable/more_image" />
+
+        <Button
+            android:id="@+id/moreViewButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ffffff"
+            android:fontFamily="@font/bmfont"
+            android:text="더 보기"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"></Button>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/boardLayout"
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.07"
+        android:background="@drawable/button_shape"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.1">
+
+        <ImageView
+            android:id="@+id/mBoardButtonImage"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:elevation="1dp"
+            android:translationZ="1dp"
+            app:srcCompat="@drawable/corkboard" />
+
+        <Button
+            android:id="@+id/mBoardViewButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ffffff"
+            android:fontFamily="@font/bmfont"
+            android:text="게시판"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"></Button>
+
+    </RelativeLayout>
+
+    <com.kakao.adfit.ads.ba.BannerAdView
+        android:id="@+id/adFitView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

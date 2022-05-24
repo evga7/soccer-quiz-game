@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">축구 지식테스트</string>
+    <string name="result_info">문제를 누르면 문제를 다시 볼 수 있어요.</string>
+    <string name="rank_info">TOP 100 (푼 퀴즈 30문제 이상,업데이트 주기 10분)</string>
+    <string name="rank_explain_info">실시간 내 순위(모든 유저포함)</string>
+    <string name="icon_explain_info">All icon by Freepik from www.flaticon.com</string>
+
+</resources>
