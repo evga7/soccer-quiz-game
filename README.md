@@ -66,6 +66,10 @@ OS : <img alt="Html" src ="https://img.shields.io/badge/20.04 LTS-007396.svg??st
 <img src="https://user-images.githubusercontent.com/44694917/178524162-3836059f-8c57-42e1-b659-4d0dd845faca.jpg" width="230" height="400"/>ㅤㅤㅤㅤ<img src="https://user-images.githubusercontent.com/44694917/178524242-631b1d1d-588c-432b-b1a4-cf71f1d74f7e.jpg" width="230" height="400"/>ㅤㅤㅤㅤ<img src="https://user-images.githubusercontent.com/44694917/178524246-5b4c9475-980b-4b80-aa82-93ca31e0e48a.jpg" width="230" height="400"/>
 <br>
 <img src="https://user-images.githubusercontent.com/44694917/178524782-d2872862-f64d-43d9-a3c3-f88ede01b032.png" width="230" height="400"/>
+<br>
+<img src="https://user-images.githubusercontent.com/44694917/186642633-b7954b01-9b92-43d9-a39d-42b6e42caff6.gif" width="230" height="400"/>
+<br>
+<img src="https://user-images.githubusercontent.com/44694917/186642649-e3b7454f-0635-4172-ab9a-bdf4d19cdadd.gif" width="230" height="400"/>
 
 ![ezgif-4-0557ff2638f7](https://user-images.githubusercontent.com/44694917/184810202-e62359ca-218d-4653-b93c-01e93a8e09d3.gif)
 
