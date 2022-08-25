@@ -37,7 +37,7 @@ public class UserPost extends BaseTimeEntity {
     @ColumnDefault("0")
     private Long commentCount=0L;
 
-    @OneToMany(mappedBy = "userPost",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "userPost",fetch = FetchType.LAZY)
     @JsonManagedReference
     private List<UserComment> userComments = new ArrayList<>();
 

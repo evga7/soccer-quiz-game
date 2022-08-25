@@ -26,7 +26,7 @@ public class FrontUserInfo extends BaseTimeEntity{
     private Long numberOfPosts=0L;
     private Long numberOfComments=0L;
     private Long numberOfBlockedUser=0L;
-    @OneToMany(mappedBy = "frontUserInfo",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "frontUserInfo",fetch = FetchType.LAZY)
     @JsonManagedReference
     private Set<UserBlock> userBlocks = new HashSet<>();
 
