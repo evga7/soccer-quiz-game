@@ -30,7 +30,7 @@ public class QuizController {
     private final QuizService quizService;
 
     @Operation(summary = "퀴즈 추가 페이지로 이동")
-    @GetMapping("/add-quiz")
+    @GetMapping("/quiz/write")
     public String goAddQuiz(Model model)
     {
         return "addQuiz";
@@ -60,7 +60,7 @@ public class QuizController {
         return "quiz";
     }
     @Operation(summary = "퀴즈 수정페이지 불러오기")
-    @GetMapping("/quiz/edit/{id}")
+    @GetMapping("/quiz/edit-page/{id}")
     public String editQuiz(@PathVariable Long id, Model model) {
         getQuiz(id, model);
         return "editQuiz";
@@ -85,8 +85,8 @@ public class QuizController {
 
     @Operation(summary = "퀴즈 수정 POST")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    @PostMapping("/quiz/edit")
-    public String modifyQuiz(QuizInfo quizInfo, RedirectAttributes redirectAttributes)
+    @PutMapping("/quiz/{id}")
+    public String modifyQuiz(@PathVariable Long id,QuizInfo quizInfo, RedirectAttributes redirectAttributes)
     {
         insertBasicImage(quizInfo);
         changedImageCheck(quizInfo);

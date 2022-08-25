@@ -11,7 +11,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import pyo.quizgame.domain.FrontUserInfo;
 import pyo.quizgame.domain.UserComment;
 import pyo.quizgame.domain.UserLike;
@@ -68,7 +70,7 @@ public class UserCommentController {
 
 
     @Operation(summary = "댓글 수정하기")
-    @PostMapping("/front-user/user-post/edit-comment")
+    @PutMapping("/front-user/user-post/comment")
     public String editComment(Long id, String nickName, String content, Model model,Long postId,
                                @PageableDefault(size = 10)Pageable pageable)
     {
@@ -86,7 +88,7 @@ public class UserCommentController {
     }
 
     @Operation(summary = "댓글 삭제하기")
-    @PostMapping("/front-user/user-post/del-comment")
+    @DeleteMapping("/front-user/user-post/comment")
     public String delUserComment(Long id,String nickName,Long postId,Model model,@PageableDefault(size = 10)Pageable pageable)
     {
         Optional<UserComment> userCommentById = userCommentService.getUserCommentById(id);

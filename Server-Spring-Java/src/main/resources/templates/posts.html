@@ -88,7 +88,7 @@
       삭제
     </button>
     <button th:if=" (${#strings.toString(param.nickName)} == ${#strings.toString(postNickName)})"  type="button" class="btn btn-white"
-            th:onclick="|location.href='@{/front-user/user-post/editPost(postId=${postId},nickName=${param.nickName})}'|">
+            th:onclick="|location.href='@{/front-user/user-post/edit-post-page(postId=${postId},nickName=${param.nickName})}'|">
       <span class="bi bi-pencil-square" style="font-size:20px;color:blue"></span>
       수정
     </button>
@@ -398,8 +398,8 @@ let deletePost = {
             nickName: $("#nickName").val(),
         };
         $.ajax({
-            type: "POST",
-            url: "/front-user/user-post/del-post",
+            type: "DELETE",
+            url: "/front-user/user-post/post",
             data: items,
             async:false,
         }).done(function (fragment) {
@@ -429,8 +429,8 @@ let editComment = {
             postId: $("#id").val(),
         };
         $.ajax({
-            type: "POST",
-            url: "/front-user/user-post/edit-comment",
+            type: "PUT",
+            url: "/front-user/user-post/comment",
             data: likes,
             async:false,
         }).done(function (fragment) {
@@ -464,8 +464,8 @@ let delComment = {
             postId: $("#id").val(),
         };
         $.ajax({
-            type: "POST",
-            url: "/front-user/user-post/del-comment",
+            type: "DELETE",
+            url: "/front-user/user-post/comment",
             data: likes,
             async:false,
         }).done(function (fragment) {

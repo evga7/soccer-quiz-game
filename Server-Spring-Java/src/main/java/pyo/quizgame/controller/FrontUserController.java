@@ -6,10 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import pyo.quizgame.domain.FrontUserInfo;
 import pyo.quizgame.domain.UserComment;
 import pyo.quizgame.domain.UserPost;
@@ -42,7 +39,7 @@ public class FrontUserController {
     }
 
     @Operation(summary = "프론트유저 퀴즈 정보 업데이트")
-    @PostMapping("/front-user/update")
+    @PutMapping("/front-user/user")
     @ResponseBody
     public String updateUser(FrontUserInfo frontUserInfo) {
         Optional<FrontUserInfo> user = frontUserService.findUser(frontUserInfo.getNickName());
@@ -98,7 +95,7 @@ public class FrontUserController {
     //10분마다 랭킹 업데이트
     @Operation(summary = "랭킹 TOP100 10분마다 업데이트하기")
     @Scheduled(cron = "0 0/10 * * * *")
-    @GetMapping("/quiz/update-user-rank")
+    @GetMapping("/quiz/user-rank")
     @ResponseBody
     public String UpdateRankTable()
     {

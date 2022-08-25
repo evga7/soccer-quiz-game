@@ -19,7 +19,7 @@
     </div>
     <h4 class="mb-3">퀴즈 수정</h4>
 
-    <form th:action="@{/quiz/edit}" method="post">
+    <form th:action="@{'quiz/'+${quiz.get().id}}" method="put">
         <div class="form-group">
             <label >파일 업로드</label>
             <input type="file" id="changeFileOriginalName" th:name="changeFileOriginalName">

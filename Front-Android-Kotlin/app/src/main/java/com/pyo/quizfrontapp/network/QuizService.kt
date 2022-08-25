@@ -31,7 +31,7 @@ interface QuizService {
     ):Call<ServerInfo>
 
     @FormUrlEncoded
-    @POST("/front-user/update")
+    @PUT("/front-user/user")
     fun userUpdate(
         @Field("nickName") nickName:String,
         @Field("totalQuizCount") totalQuizCount:Long,

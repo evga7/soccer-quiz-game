@@ -62,7 +62,7 @@
         <div class="col-auto">
             <button type="submit" class="btn btn-primary">검색</button>
             <button class="btn btn-primary"
-                    th:onclick="|location.href='@{/front-user/user-post/addPost(nickName=${param.nickName})}'|"
+                    th:onclick="|location.href='@{/front-user/user-post/post-page(nickName=${param.nickName})}'|"
                     type="button" >글쓰기</button>
         </div>
     </form>

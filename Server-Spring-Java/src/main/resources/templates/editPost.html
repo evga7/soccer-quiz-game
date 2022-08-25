@@ -23,7 +23,7 @@
 
     <h4 class="mb-1">글 수정하기</h4>
   </div>
-  <form th:action="@{/front-user/user-post/edit-post(nickName=${param.nickName})}" th:object="${userPostDto}" method="post" class="h-auto">
+  <form th:action="@{/front-user/user-post/post(nickName=${param.nickName})}" th:object="${userPostDto}" method="put" class="h-auto">
     <div class="mb-1">
       <input type="text" id="title" th:name="title" th:class="${errors?.containsKey('titleLength')} ? 'form-control field-error' : 'form-control text-center'" placeholder="제목을 입력하세요 (2~25자)" style="height: 40px" th:errorclass="field-error"
              th:value="${beforeTitle}">

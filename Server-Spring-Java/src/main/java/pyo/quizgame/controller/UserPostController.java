@@ -50,7 +50,7 @@ public class UserPostController {
 
 
     @Operation(summary = "게시물 수정하기")
-    @PostMapping("/front-user/user-post/edit-post")
+    @PutMapping("/front-user/user-post/post")
     public String userEditPost(UserPostDto userPostDto, Long postId, RedirectAttributes redirectAttributes,Model model) {
 
         String title = userPostDto.getTitle();
@@ -128,7 +128,7 @@ public class UserPostController {
 
 
     @Operation(summary = "게시글 작성 페이지")
-    @GetMapping("/front-user/user-post/addPost")
+    @GetMapping("/front-user/user-post/post-page")
     public String addPost(Model model,@RequestParam String nickName)
     {
         model.addAttribute("userPostDto", new UserPostDto());
@@ -136,7 +136,7 @@ public class UserPostController {
     }
 
     @Operation(summary = "게시글 수정 페이지")
-    @GetMapping("/front-user/user-post/editPost")
+    @GetMapping("/front-user/user-post/edit-post-page")
     public String editPost(Model model,@RequestParam String nickName,@RequestParam Long postId)
     {
         Optional<UserPost> userPostByPostId = userPostService.getUserPostByPostId(postId);
@@ -149,7 +149,7 @@ public class UserPostController {
 
     //dto 사용해서 return 하는함수 일단 jsonmange로 바꿨음 // 다시바꿈 3.8일날;;
     @Operation(summary = "게시글 삭제하기")
-    @PostMapping("/front-user/user-post/del-post")
+    @DeleteMapping("/front-user/user-post/post")
     @ResponseBody
     public String delPost(Long id,String nickName)
     {
